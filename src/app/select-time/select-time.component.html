@@ -1,0 +1,35 @@
+<section *ngIf="show">
+    <h6 class="title">ENTER TIME</h6>
+    <div class="section-body">
+        <span id="hours" class="digits" tabindex="0"
+         (click)="onClick($event)"
+         (blur)="onBlur($event)">00</span>
+         
+        <span class="interval">:</span>
+        <span id="minutes" class=" digits" tabindex="0"
+         (click)="onClick($event)"
+         (blur)="onBlur($event)">00</span>
+
+        <div class="choose">
+            <div id="wrap-choose-AM"  [class.active]="active">
+                <span  class="choose-btns"
+                (click)="doActive($event)">AM
+               </span>
+            </div>
+            <div id="wrap-choose-PM" [class.no-active]="noActive">
+                <span class="choose-btns" 
+                (click)="doActive($event)">PM
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="labels">
+        <span class="labels-digits-hours">Hours</span>
+        <span class="labels-digits-min">Minutes</span>
+    </div>
+    <div class="btns-wraper" >
+        <div class="btns" (click)="cancel()">CANCEL</div>
+        <div class="btns"
+        (click)="sentTime()">OK</div>
+    </div>
+</section>

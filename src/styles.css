@@ -1,1 +1,168 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.input-wraper{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 63px;
+    width: 218px;
+    background: #DCDCDC;
+    border-radius: 3px;
+    border-bottom: 3px solid #5E00E4;
+}
+input{
+    margin-left: 14px;
+    border: none;
+    font-size: 20px;
+    text-align: left;
+    color: #817f85;
+    background: #DCDCDC;
+}
+input:focus {
+    outline: none;
+}
+label{
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-top: 10px;
+    color: #5E00E4;
+}
+span:focus {
+    border: solid 1px black;
+}
+/* section {
+    position: absolute;
+} */
+.active {
+    background-color:  #ECE0FD;
+    color: #9C5FF4;
+}
+.no-active {
+    background-color: #ECE0FD;
+    color: #9C5FF4;
+}
+.main {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto;
+    background: #E1E1E1;
+    height: 400px;
+    align-items: center;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 464px;
+    border-radius: 5px;
+    box-shadow: 12px 12 px 12px red;
+    box-shadow: 0px 3px 10px 3px #b3adad;
+    height: 291px;
+    position: relative;
+    top: -6%;
+}
+.title {
+    font-size: 15px;
+    color: #505050;
+  
+    margin-left: 30px;
+}
+.section-body {
+    display: flex;
+    justify-content: space-around;
+}
+.digits {
+    text-align: center;
+    width: 118px;
+    height: 93px;
+    background: #E1E1E1;
+    font-size: 83px;
+    border-radius: 5px;
+}
+.digits:focus {
+    outline: none;
+    border: solid 2px #9C5FF4;
+    border-radius: 5px;
+    background: white;
+}
+.digits:focus:after {
+    content: '';
+    width: 2px;
+    height: 63px;
+    background: #9C5FF4;
+    opacity: 0;
+    display: inline-block;
+    animation: blinkCursor 0.8s linear infinite ;
+  }
+  @keyframes blinkCursor {
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+.interval {
+    font-size: 75px;
+}
+.choose {
+    cursor: pointer;
+}
+#wrap-choose-AM {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    height: 47px;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #B4B4B4;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+#wrap-choose-PM{
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    height: 47px;
+    justify-content: space-around;
+    align-items: center;
+    border-left: 2px solid #B4B4B4;
+    border-right: 2px solid #B4B4B4;
+    border-bottom: 2px solid #B4B4B4;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.choose-btns {
+    font-size: 21px;
+}
+.labels {
+    color: #505050;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.labels-digits-hours {
+    margin-left: 17px;
+}
+.labels-digits-min {
+    margin-right: 182px;
+}
+.btns-wraper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.btns {
+    font-weight: bold;
+    margin-right: 48px;
+    color: #5E00E4;
+    cursor: pointer;
+}
+
+

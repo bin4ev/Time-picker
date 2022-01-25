@@ -1,0 +1,11 @@
+<div class="main">
+    <div class="input-wraper">
+        <label for="date-input">Time</label>
+        <input name="date-input" (focus)="onFocus()" value="{{time}}">
+    </div>
+    <div>COVER ME</div>
+    <select-time [show] = "show" 
+    (sentData)="showData($event)"
+    (canceling)="cancel()"></select-time>
+</div>
+
